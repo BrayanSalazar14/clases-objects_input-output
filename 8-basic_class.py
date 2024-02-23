@@ -6,11 +6,7 @@ class Book:
         self.title = title
         self.author = author
 
-    def describe_book(self):
-        print(f"Title: {self.title} Author: {self.author}")
 
-
-title = input("Ingresa el titulo: ")
-author = input("Ingresa el author: ")
-book = Book(title, author)
-book.describe_book()
+book = Book("Python Basics", "John Doe")
+print(book.title)
+print(book.author)
